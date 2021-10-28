@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/intro_login_background_color"
+    tools:context="com.samsung.hsl.fitnessuser.ui.FitnessIntroLoginActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:background="@drawable/fitness_intro_login_bg" >
+
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/fitness_intro_login_s_fitness_imageview"
+                android:layout_width="220.5dp"
+                android:layout_height="42.75dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="69.75dp"
+                android:layout_marginTop="137.5dp"
+                android:src="@drawable/fitness_intro_login_s_ftiness" />
+
+            <!-- 비밀번호 입력 -->
+
+            <EditText
+                android:id="@+id/fitness_intro_login_password_box_edittext"
+                android:layout_width="257.75dp"
+                android:layout_height="40.75dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/fitness_intro_login_s_fitness_imageview"
+                android:layout_marginLeft="51dp"
+                android:layout_marginTop="142dp"
+                android:background="@drawable/fitness_intro_login_password_box"
+                android:cursorVisible="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:hint="@string/string_fitness_intro_login_password_hint"
+                android:inputType="textPassword"
+                android:paddingLeft="50dp"
+                android:textColor="#6caa2f"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:textSize="15sp" />
+
+            <!-- 로그인 상태 유지 텍스트 박스 -->
+
+            <TextView
+                android:id="@+id/fitness_intro_login_keep_login_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/fitness_intro_login_password_box_edittext"
+                android:layout_marginRight="51.25dp"
+                android:layout_marginTop="13.5dp"
+                android:background="@color/transparent"
+                android:clickable="true"
+                android:gravity="top"
+                android:onClick="onClick"
+                android:text="@string/string_fitness_intro_save_password"
+                android:textColor="#6caa2f"
+                android:textSize="12sp" />
+
+            <!-- 로그인 상태 유지 체크박스 -->
+
+            <ImageButton
+                android:id="@+id/fitness_intro_login_auto_login_imagebutton"
+                android:layout_width="15.50dp"
+                android:layout_height="15.50dp"
+                android:layout_below="@id/fitness_intro_login_password_box_edittext"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="13.25dp"
+                android:layout_toLeftOf="@id/fitness_intro_login_keep_login_imageview"
+                android:onClick="onClick"
+                android:src="@drawable/fitness_intro_login_auto_login_btn_selector" />
+
+            <!-- 로그인 버튼 -->
+
+            <TextView
+                android:id="@+id/fitness_intro_login_sign_in_imagebutton"
+                android:layout_width="257.75dp"
+                android:layout_height="41.00dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/fitness_intro_login_password_box_edittext"
+                android:layout_marginLeft="51dp"
+                android:layout_marginTop="77.75dp"
+                android:background="@drawable/fitness_intro_login_btn"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/string_fitness_intro_login"
+                android:textColor="@color/main_text_color" />
+
+            <!-- 회원가입 버튼 -->
+
+            <TextView
+                android:id="@+id/fitness_intro_login_sign_up_imagebutton"
+                android:layout_width="257.75dp"
+                android:layout_height="41.00dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/fitness_intro_login_sign_in_imagebutton"
+                android:layout_marginLeft="51dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/fitness_intro_login_btn"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/string_fitness_intro_sign_up"
+                android:textColor="@color/main_text_color" />
+
+            <!-- 비밀번호 찾기 버튼 -->
+
+            <ImageButton
+                android:id="@+id/fitness_intro_login_for_get_password_imagebutton"
+                android:layout_width="192.25dp"
+                android:layout_height="14.00dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/fitness_intro_login_sign_up_imagebutton"
+                android:layout_marginLeft="83.75dp"
+                android:layout_marginTop="70.25dp"
+                android:background="@color/transparent"
+                android:onClick="onClick"
+                android:src="@drawable/fitness_intro_login_for_got_password" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

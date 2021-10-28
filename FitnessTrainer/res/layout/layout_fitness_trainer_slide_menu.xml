@@ -1,0 +1,181 @@
+<!-- The navigation drawer -->
+<com.google.samples.apps.iosched.ui.widget.ScrimInsetsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_framelayout"
+    android:layout_width="303dp"
+    android:layout_height="640dp"
+    android:layout_gravity="start"
+    android:background="@color/main_background_clolor"
+    android:fitsSystemWindows="true"
+    app:insetForeground="#4000" >
+
+    <!-- Your drawer content -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="303.25dp"
+            android:layout_height="214dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="124dp"
+            android:src="@drawable/fitness_slide_menu_menu_board" />
+
+        <ImageView
+            android:id="@+id/fitness_slide_menu_bar_s_fit_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/fitness_slide_menu_bar_s_fit" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/fitness_slide_menu_bar_s_fit_imageview" >
+
+            <TextView
+                android:id="@+id/fitness_slide_menu_bar_welcom_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="17.75dp"
+                android:layout_marginTop="24.75dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/string_fitness_trainer_slide_menu_welcome_trainer"
+                android:textColor="@color/slidebar_welcome_text_color"
+                android:textSize="18.75sp" />
+            
+            <!-- 회원 관리 -->
+
+            <RelativeLayout
+                android:id="@+id/fitness_slide_menu_user_list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="64.5dp" >
+
+                <ImageView
+                    android:id="@+id/fitness_slide_menu_user_list_icon_imageview"
+                    android:layout_width="17.25dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dp"
+                    android:src="@drawable/fitness_slide_menu_my_info_icon" />
+
+                <TextView
+                    android:id="@+id/fitness_slide_menu_user_list_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21.25dp"
+                    android:layout_toRightOf="@id/fitness_slide_menu_user_list_icon_imageview"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/string_fitness_trainer_slide_menu_user_list"
+                    android:textColor="@color/slidebar_menu_text_color"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            
+            <!-- 운동 시작 -->
+
+            <RelativeLayout
+                android:id="@+id/fitness_slide_menu_start_layout"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_below="@id/fitness_slide_menu_user_list_layout">
+
+                 <ImageView
+                    android:id="@+id/fitness_slide_menu_start_icon_imageview"
+                    android:layout_width="17.25dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dp"
+                    android:src="@drawable/fitness_aim_manager_01_graph_static" />
+
+                <TextView
+                    android:id="@+id/fitness_slide_start_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21.25dp"
+                    android:layout_toRightOf="@id/fitness_slide_menu_start_icon_imageview"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/string_fitness_trainer_slide_menu_start"
+                    android:textColor="@color/slidebar_menu_text_color"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            
+             <!-- 운동 종료 -->
+
+            <RelativeLayout
+                android:id="@+id/fitness_slide_menu_end_layout"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_below="@id/fitness_slide_menu_start_layout">
+
+                 <ImageView
+                    android:id="@+id/fitness_slide_menu_end_icon_imageview"
+                    android:layout_width="17.25dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dp"
+                    android:src="@drawable/fitness_aim_manager_01_graph_static" />
+
+                <TextView
+                    android:id="@+id/fitness_slide_end_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21.25dp"
+                    android:layout_toRightOf="@id/fitness_slide_menu_end_icon_imageview"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/string_fitness_trainer_slide_menu_end"
+                    android:textColor="@color/slidebar_menu_text_color"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            
+            <!-- 종료 -->
+
+            <RelativeLayout
+                android:id="@+id/fitness_slide_menu_logout_layout"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_below="@id/fitness_slide_menu_end_layout" >
+
+                <ImageView
+                    android:id="@+id/fitness_slide_menu_log_out_icon_imageview"
+                    android:layout_width="19dp"
+                    android:layout_height="20.5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dp"
+                    android:src="@drawable/fitness_slide_menu_log_out_icon" />
+
+                <TextView
+                    android:id="@+id/fitness_slide_menu_log_out_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="19.25dp"
+                    android:layout_toRightOf="@id/fitness_slide_menu_log_out_icon_imageview"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/string_fitness_slide_menu_logout"
+                    android:textColor="@color/slidebar_menu_text_color"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.google.samples.apps.iosched.ui.widget.ScrimInsetsFrameLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 회원 등록 리스트 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fitness_trainer_main_item"
+    android:layout_width="match_parent"
+    android:layout_height="114.75dp"
+    android:layout_below="@+id/finess_member_main_sub_bar" >
+
+    
+
+    <RelativeLayout
+        android:layout_width="640.00dp"
+        android:layout_height="100.75dp"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF" >
+        
+		<!-- 사진 -->
+        <ImageView
+            android:id="@+id/fitness_trainer_user_list_item_picture"
+            android:layout_width="75.00dp"
+            android:layout_height="75.00dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="27.5dp"
+            android:src="@drawable/fitness_register_memeber_automatic_photo" />
+
+        <!-- 이름 -->
+
+        <TextView
+            android:id="@+id/fitness_trainer_user_list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="15.375dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="32.5dp"
+            android:layout_marginTop="31.75dp"
+            android:layout_toRightOf="@id/fitness_trainer_user_list_item_picture"
+            android:gravity="center"
+            android:textColor="@color/trainer_user_list_name"
+            android:textSize="13sp" />
+
+        <!-- 이메일 -->
+
+        <TextView
+            android:id="@+id/fitness_trainer_user_list_item_email"
+            android:layout_width="wrap_content"
+            android:layout_height="15.375dp"
+            android:layout_alignLeft="@id/fitness_trainer_user_list_item_name"
+            android:layout_below="@id/fitness_trainer_user_list_item_name"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:textColor="@color/trainer_user_list_email"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_grey_clolor" >
+
+    <RelativeLayout
+        android:id="@+id/fitness_trainer_graph_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/main_background_clolor" >
+
+        <include
+            android:id="@+id/fitness_main_graph_line_include"
+            layout="@layout/layout_fitness_main_graph_line" />
+        <!-- 알람 문구 영역 -->
+
+        <TextView
+            android:id="@+id/fitness_main_graph_message_textview"
+            android:layout_width="match_parent"
+            android:layout_height="50.5dp"
+            android:layout_below="@id/fitness_main_graph_line_include"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="17.75dp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/string_fitness_main_message_none"
+            android:textColor="@color/donut_progress_not_used"
+            android:textSize="15.75sp" />
+    </RelativeLayout>
+
+    <!-- 상태 숫자 표시 영역 -->
+
+    <RelativeLayout
+        android:id="@+id/fitness_main_range_status_layout"
+        android:layout_width="360dp"
+        android:layout_height="153.25dp"
+        android:layout_marginTop="9dp"
+        android:layout_below="@id/fitness_trainer_graph_container"
+        android:background="@color/main_background_clolor" >
+
+        <include layout="@layout/layout_fitness_main_range_status" />
+    </RelativeLayout>
+
+</RelativeLayout>

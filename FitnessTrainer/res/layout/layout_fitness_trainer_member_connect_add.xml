@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context="com.samsung.hsl.fitness.ui.trainer.FitnessTrainerMemberConnectAddActivity" >
+
+    <include layout="@layout/layout_fitness_top_bar" />
+    <!-- 회원 목록 리스트 -->
+
+    <ListView
+        android:id="@+id/fitness_trainer_member_add_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="118.25dp"
+        android:layout_marginTop="61.25dp"
+        android:background="#F3F3F3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="118.25dp"
+        android:layout_alignParentBottom="true" >
+
+        <ImageButton
+            android:id="@+id/fitness_trainer_connection_search"
+            android:layout_width="257.75dp"
+            android:layout_height="41.00dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="47.25dp"
+            android:background="@color/transparent"
+            android:src="@drawable/fitness_device_connect_search_btn_select" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,262 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="330dp"
+    android:layout_height="126.25dp"
+    android:layout_centerInParent="true"
+    android:orientation="horizontal"
+    android:weightSum="4" >
+
+    <!-- 심박수 -->
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <!-- 심박수 아이콘 -->
+
+        <RelativeLayout
+            android:id="@+id/fitness_main_range_heartrate_icon_layout"
+            android:layout_width="43.25dp"
+            android:layout_height="43.25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp" >
+
+            <ImageView
+                android:layout_width="37.50dp"
+                android:layout_height="37.50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/fixed_bar_edit_heart_rate_icon" />
+        </RelativeLayout>
+        <!-- 심박수 글씨 -->
+
+        <TextView
+            style="@style/style_fitness_main_range_heartrate"
+            android:id="@+id/fitness_main_range_heartrate_text"
+            android:layout_below="@id/fitness_main_range_heartrate_icon_layout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/string_fitness_main_range_heartrate"
+            android:textColor="@color/range_color_normal" />
+
+        <!-- 심박수 실시간 값 -->
+
+        <TextView
+            android:id="@+id/fitness_main_range_heartrate_value_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fitness_main_range_heartrate_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6.75dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/string_fitness_main_range_no_value"
+            android:textColor="@color/range_color_normal"
+            android:textSize="18sp" />
+
+        <!-- 심박수 단위 -->
+
+        <RelativeLayout
+            android:id="@+id/fitness_main_range_heartrate_unit_layout"
+            android:layout_width="38.25dp"
+            android:layout_height="23.00dp"
+            android:layout_below="@id/fitness_main_range_heartrate_value_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp" >
+
+            <ImageView
+                android:layout_width="30.00dp"
+                android:layout_height="15.75dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/fitness_main_range_bpm" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 칼로리 -->
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <!-- 칼로리 아이콘 -->
+
+        <RelativeLayout
+            android:id="@+id/fitness_main_range_calorie_icon_layout"
+            android:layout_width="43.25dp"
+            android:layout_height="43.25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp" >
+
+            <ImageView
+                android:layout_width="34.25dp"
+                android:layout_height="34.25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/fitness_main_range_calorie_icon" />
+        </RelativeLayout>
+        <!-- 칼로리 글씨 -->
+
+        <TextView
+            style="@style/style_fitness_main_range_calorie"
+            android:id="@+id/fitness_main_range_calorie_text"
+            android:layout_below="@id/fitness_main_range_calorie_icon_layout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/string_fitness_main_range_calorie"
+            android:textColor="@color/range_color_normal" />
+        <!-- 칼로리 실시간 값 -->
+
+        <TextView
+            android:id="@+id/fitness_main_range_calorie_value_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fitness_main_range_calorie_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6.75dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/string_fitness_main_range_no_value"
+            android:textColor="@color/range_color_normal"
+            android:textSize="18sp" />
+
+        <!-- 칼로리 단위 -->
+
+        <RelativeLayout
+            android:id="@+id/fitness_main_range_calorie_unit_layout"
+            android:layout_width="38.25dp"
+            android:layout_height="23.00dp"
+            android:layout_below="@id/fitness_main_range_calorie_value_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6.5dp" >
+
+            <ImageView
+                android:layout_width="24.50dp"
+                android:layout_height="11.50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/fitness_main_range_kcal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 피부온도 -->
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <!-- 피부온도 아이콘 -->
+
+        <RelativeLayout
+            android:id="@+id/fitness_main_range_temperature_icon_layout"
+            android:layout_width="43.25dp"
+            android:layout_height="43.25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp" >
+
+            <ImageView
+                android:layout_width="34.25dp"
+                android:layout_height="34.25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/fitness_main_range_temperature_icon" />
+        </RelativeLayout>
+        <!-- 피부온도 글씨 -->
+
+        <TextView
+            style="@style/style_fitness_main_range_skin_temperature"
+            android:id="@+id/fitness_main_range_temperature_text"
+            android:layout_below="@id/fitness_main_range_temperature_icon_layout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/string_fitness_main_range_skin_temperature"
+            android:textColor="@color/range_color_normal" />
+        <!-- 피부온도 실시간 값 -->
+
+        <TextView
+            android:id="@+id/fitness_main_range_temperature_value_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fitness_main_range_temperature_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7.5dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/string_fitness_main_range_no_value"
+            android:textColor="@color/range_color_normal"
+            android:textSize="19.47sp" />
+        <!-- 피부온도 단위 -->
+
+        <RelativeLayout
+            android:id="@+id/fitness_main_range_temperature_unit_layout"
+            android:layout_width="38.25dp"
+            android:layout_height="23.00dp"
+            android:layout_below="@id/fitness_main_range_temperature_value_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6.00dp" >
+
+            <ImageView
+                android:layout_width="11.00dp"
+                android:layout_height="9.75dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/fitness_main_range_oc" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 목표강도 -->
+
+    <RelativeLayout
+        android:id="@+id/fitness_main_range_aim_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true" >
+
+        <!-- 목표강도 아이콘 -->
+
+        <RelativeLayout
+            android:id="@+id/fitness_main_range_aim_icon_layout"
+            android:layout_width="43.25dp"
+            android:layout_height="43.25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp" >
+
+            <ImageView
+                android:layout_width="33.50dp"
+                android:layout_height="33.75dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/fitness_main_range_aim_icon" />
+        </RelativeLayout>
+        <!-- 목표강도 글씨 -->
+
+        <TextView
+            style="@style/style_fitness_main_range_aim"
+            android:id="@+id/fitness_main_range_aim_text"
+            android:layout_below="@id/fitness_main_range_aim_icon_layout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/range_color_normal"
+            android:text="@string/string_fitness_main_range_aim" />
+        <!-- 목표강도 실시간 값 -->
+
+        <TextView
+            android:id="@+id/fitness_main_range_aim_value_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fitness_main_range_aim_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8.00dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/string_fitness_main_range_no_value"
+            android:textColor="@color/range_color_normal"
+            android:textSize="16.6sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:clickable="true" >
+
+    <TextView
+        android:layout_width="22.5dp"
+        android:layout_height="21.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="11.75dp"
+        android:layout_marginTop="0dp"
+        android:textSize="16.5sp"
+        android:gravity="center_horizontal" />
+
+    <!-- 17.5sp -> 11sp : 크기가 맞지 않아 임의로 조정 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21.5dp"
+        android:gravity="center"
+        android:textSize="11sp" />
+
+</RelativeLayout>

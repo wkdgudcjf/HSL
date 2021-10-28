@@ -1,0 +1,121 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- 요일 -->
+    <style name="calendar_day_of_week">
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">22.25dp</item>
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginLeft">23.5dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <!-- 주 -->
+    <style name="calendar_week">
+        <item name="android:layout_height">75dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">7</item>
+        <item name="android:background">@drawable/fitness_calendar_border</item>
+    </style>
+    
+    <style name="calendar_trainer_week">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">7</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:paddingLeft">19.75dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:background">@drawable/fitness_calendar_border</item>
+    </style>
+    
+
+    <!-- 메인메뉴 아래 상태 레이블 글자 크기 -->
+    <style name="style_fitness_main_range_heartrate">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">68.00dp</item>
+        <item name="android:layout_height">19.50dp</item>
+        <item name="android:layout_marginTop">5.75dp</item>
+    </style>
+
+    <style name="style_fitness_main_range_calorie">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">68.00dp</item>
+        <item name="android:layout_height">19.50dp</item>
+        <item name="android:layout_marginTop">5.75dp</item>
+    </style>
+
+    <style name="style_fitness_main_range_skin_temperature">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">68.00dp</item>
+        <item name="android:layout_height">19.50dp</item>
+        <item name="android:layout_marginTop">5.75dp</item>
+    </style>
+
+    <style name="style_fitness_main_range_aim">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">68.00dp</item>
+        <item name="android:layout_height">19.50dp</item>
+        <item name="android:layout_marginTop">5.75dp</item>
+    </style>
+    
+    <color name="main_clolor">#8bc24a</color>
+    <color name="main_background_clolor">#ffffff</color>
+	<color name="main_background_grey_clolor">#f2f2f2</color>
+	<color name="main_top_bar_clolor">#88c148</color>
+	<color name="find_password_background_color">#e0e0e0</color>
+    <color name="main_text_color">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="day_of_week_holiday">#ff5b00</color>
+    <color name="day_of_week_weekday">#000000</color>
+    <color name="day_of_cur_month">#010101</color>
+    <color name="day_of_other_month">#cfcfcf</color>
+    <color name="slidebar_welcome_text_color">#88c148</color>
+    <color name="slidebar_menu_text_color">#333333</color>
+    <color name="donut_progress_not_used">#6f7070</color>
+    <color name="donut_progress_short">#fda300</color>
+    <color name="donut_progress_aim">#8bc24a</color>
+    <color name="donut_progress_high">#ff5b00</color>
+    <color name="donut_progress_unfinished">#ffc751</color>
+    <color name="graph_warm_up">#f8f886</color>
+    <color name="graph_fat_bunning">#f8f886</color>
+    <color name="graph_common">#c2f473</color>
+    <color name="graph_high">#ff944d</color>
+    <color name="calendar_info_today">#8ac249</color>
+    <color name="calendar_info_other">#686868</color>
+    <color name="stable_text_color">#505050</color>
+    <color name="range_color_high">#ff5b00</color>
+    <color name="range_color_normal">#000100</color>
+    <color name="range_color_aim">#88c148</color>
+    <color name="aim_manager_strength_range_selected">#ffffff</color>
+    <color name="aim_manager_strength_range">#5d5d5d</color>
+    <color name="aim_manager_button">#86c35b</color>
+	<color name="member_main_delete">#0EF078</color>
+	<color name="member_main_edit">#3B777D</color>
+	<!-- 강사용 색상 -->
+	<color name="trainer_user_list_name">#333333</color>
+	<color name="trainer_user_list_email">#88c148</color>
+	<color name="trainer_user_board_name">#86c35b</color>
+	<color name="trainer_user_board_birth_height_weight">#5d5d5d</color>
+	<color name="trainer_main_normal">#333333</color>
+	<color name="trainer_main_exceed">#ff5b00</color>
+	<color name="trainer_main_aim">#88c148</color>
+</resources>

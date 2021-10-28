@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.samsung.hsl.fitnessuser"
+    android:layout_width="226dp"
+    android:layout_height="321.75dp"
+    android:background="@drawable/fitness_short_noti_board_bg"
+     >
+        
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="200.75dp"
+        android:layout_marginLeft="30.75dp"
+        android:layout_marginTop="37dp" >
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:id="@+id/fitness_main_graph_donutprogress"
+            android:layout_width="131.5dp"
+            android:layout_height="131.5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:donut_finished_color="#ff5b00"
+            app:donut_finished_stroke_width="10dp"
+            app:donut_inner_bottom_text=""
+            app:donut_max="220"
+            app:donut_suffix_text=""
+            app:donut_text=""
+            app:donut_unfinished_color="#ffc851"
+            app:donut_unfinished_stroke_width="5dp" />
+
+        <ImageView
+            android:id="@+id/fitness_main_graph_heart_imageview"
+            android:layout_width="12.75dp"
+            android:layout_height="11.25dp"
+            android:layout_alignTop="@id/fitness_main_graph_donutprogress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/fitness_short_noti_graph_heart" />
+
+        <TextView
+            android:id="@+id/fitness_main_graph_heart_value_textview"
+            android:layout_width="60.5dp"
+            android:layout_height="29.5dp"
+            android:layout_below="@id/fitness_main_graph_heart_imageview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="16.75dp"
+            android:gravity="center"
+            android:textSize="18.25sp"
+            android:text="-" />
+
+        <ImageView
+            android:id="@+id/fitness_main_graph_bmp_textview"
+            android:layout_width="21dp"
+            android:layout_height="10.25dp"
+            android:layout_below="@id/fitness_main_graph_heart_value_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="14.5dp"
+            android:src="@drawable/fitness_short_noti_graph_bpm" />
+
+        <!-- 알람 문구 영역 -->
+
+        <TextView
+            android:id="@+id/fitness_main_graph_message_textview"
+            android:layout_width="180.5dp"
+            android:layout_height="50.75dp"
+            android:layout_below="@id/fitness_main_graph_donutprogress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/string_fitness_main_message_exceed_aim"
+            android:textColor="#ff5b00" />
+    </RelativeLayout>
+    
+    
+    <ImageButton
+            android:id="@+id/fitness_short_noti_graph_x_btn"
+            android:layout_width="14.75dp"
+            android:layout_height="16dp"
+            android:background="@color/transparent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="170.5dp"
+            android:layout_marginTop="19.75dp"
+            android:src="@drawable/fitness_short_noti_graph_x_btn" />
+    
+     <ImageButton
+            android:id="@+id/fitness_short_noti_graph_confrim_btn"
+            android:layout_width="143.5dp"
+            android:layout_height="32.5dp"
+            android:background="@color/transparent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="238.75dp"
+            android:src="@drawable/fitness_short_noti_confirm_btn" />
+	
+</RelativeLayout>

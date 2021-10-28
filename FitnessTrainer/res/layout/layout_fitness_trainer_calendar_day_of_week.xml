@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fitness_calendar_day_of_week"
+    android:layout_width="match_parent"
+    android:layout_height="30.25dp"
+    android:background="@drawable/fitness_calendar_border" >
+
+    <!-- 가운데 정렬을 위한 영역 -->
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="31.75dp" >
+
+        <!-- 일요일 -->
+        <TextView
+            android:id="@+id/fitness_calendar_day_of_week_sunday"
+            android:layout_alignParentLeft="true"
+            style="@style/calendar_day_of_week"
+            android:textColor="@color/day_of_week_holiday"
+            android:text="@string/string_fitness_calendar_day_of_week_sunday" />
+
+        <!-- 월요일 -->
+        <TextView
+            android:id="@+id/fitness_calendar_day_of_week_monday"
+            android:layout_toRightOf="@id/fitness_calendar_day_of_week_sunday"
+            android:textColor="@color/day_of_week_weekday"
+            style="@style/calendar_day_of_week"
+            android:text="@string/string_fitness_calendar_day_of_week_monday" />
+
+        <!-- 화요일 -->
+        <TextView
+            android:id="@+id/fitness_calendar_day_of_week_tuesday"
+            android:layout_toRightOf="@id/fitness_calendar_day_of_week_monday"
+            android:textColor="@color/day_of_week_weekday"
+            style="@style/calendar_day_of_week"
+            android:text="@string/string_fitness_calendar_day_of_week_tuesday" />
+
+         <!-- 수요일 -->
+        <TextView
+            android:id="@+id/fitness_calendar_day_of_week_wednesday"
+            android:layout_toRightOf="@id/fitness_calendar_day_of_week_tuesday"
+            android:textColor="@color/day_of_week_weekday"
+            style="@style/calendar_day_of_week"
+            android:text="@string/string_fitness_calendar_day_of_week_wednesday" />
+
+         <!-- 목요일 -->
+        <TextView
+            android:id="@+id/fitness_calendar_day_of_week_thursday"
+            android:layout_toRightOf="@id/fitness_calendar_day_of_week_wednesday"
+            android:textColor="@color/day_of_week_weekday"
+            style="@style/calendar_day_of_week"
+            android:text="@string/string_fitness_calendar_day_of_week_thursday" />
+
+         <!-- 금요일 -->
+        <TextView
+            android:id="@+id/fitness_calendar_day_of_week_friday"
+            android:layout_toRightOf="@id/fitness_calendar_day_of_week_thursday"
+            android:textColor="@color/day_of_week_weekday"
+            style="@style/calendar_day_of_week"
+            android:text="@string/string_fitness_calendar_day_of_week_friday" />
+
+         <!-- 토요일 -->
+        <TextView
+            android:id="@+id/fitness_calendar_day_of_week_saturday"
+            android:layout_toRightOf="@id/fitness_calendar_day_of_week_friday"
+            android:textColor="@color/day_of_week_holiday"
+            style="@style/calendar_day_of_week"
+            android:text="@string/string_fitness_calendar_day_of_week_saturday" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="94dp"
+    android:background="@color/main_background_clolor" >
+
+    <!-- 가운데 화살표와 년월 영역 -->
+
+    <RelativeLayout
+        android:layout_width="197.5dp"
+        android:layout_height="21.75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31.00dp" >
+
+        
+        <TextView
+            android:id="@+id/fitness_calendar_detail_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/day_of_week_weekday"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="19.00sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

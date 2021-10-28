@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="335dp"
+    android:layout_height="290.25dp"
+    android:orientation="vertical"
+    android:focusable="true"
+	android:focusableInTouchMode="true"
+    android:background="@drawable/fitness_popup_connect_board"
+    android:weightSum="1" >
+    
+    
+    <ImageButton
+			     android:id="@+id/fitness_popup_ble_icon"
+			     android:layout_width="46.25dp"
+			     android:layout_height="75.25dp"
+			     android:layout_marginTop="46.75dp"
+			     android:layout_marginLeft="80.5dp"
+			     android:background="@color/transparent"
+			     android:src="@drawable/fitness_popup_ble_icon" />
+    
+    <ImageButton
+			     android:id="@+id/fitness_popup_wifi_icon"
+			     android:layout_width="78.75dp"
+			     android:layout_height="60.5dp"
+			     android:layout_marginTop="54.25dp"
+			     android:layout_marginLeft="170.5dp"
+			     android:background="@color/transparent"
+			     android:src="@drawable/fitness_popup_wifi_icon" />
+    
+     <ImageView
+		    	 android:id="@+id/fitness_popup_connect_text"
+		    	 android:layout_width="177dp"
+			     android:layout_height="40.25dp"
+			     android:layout_marginTop="147.75dp"
+			     android:background="@color/transparent"
+			     android:layout_marginLeft="76.5dp"
+			     android:src="@drawable/fitness_popup_connect_text" />
+   
+    <ImageButton
+		    	 android:id="@+id/fitness_popup_connect_btn"
+		    	 android:layout_width="220.75dp"
+			     android:layout_height="41dp"
+			     android:layout_marginTop="203.75dp"
+			     android:background="@color/transparent"
+			     android:layout_marginLeft="59.5dp"
+			     android:src="@drawable/fitness_popup_connect_btn" />
+ </RelativeLayout>

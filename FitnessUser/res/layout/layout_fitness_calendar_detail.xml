@@ -1,0 +1,63 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_clolor"
+    tools:context="com.samsung.hsl.fitnessuser.ui.FitnessCalendarDetailActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_background_grey_clolor" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="630dp" >
+
+            <!-- Tob Bar -->
+
+            <include layout="@layout/layout_fitness_top_bar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="568.75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="61.25dp"
+                android:orientation="vertical" >
+
+                <!-- 년, 월 -->
+
+                <include
+                    android:id="@+id/fitness_calendar_detail_title"
+                    layout="@layout/layout_fitness_calendar_detail_title" />
+                <!-- 그래프 -->
+
+                <RelativeLayout
+                    android:id="@+id/fitness_calendar_detail_graph_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="322.00dp"
+                    android:background="@color/main_background_clolor"
+                    android:paddingBottom="34dp" >
+
+                    <include layout="@layout/layout_fitness_main_graph_line" />
+                </RelativeLayout>
+
+                <!-- 상태 정보 -->
+
+                <RelativeLayout
+                    android:id="@+id/fitness_calendar_detail_range_status_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="153.25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@color/main_background_clolor" >
+
+                    <include layout="@layout/layout_fitness_main_range_status" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include layout="@layout/layout_fitness_slide_menu" />
+
+</android.support.v4.widget.DrawerLayout>

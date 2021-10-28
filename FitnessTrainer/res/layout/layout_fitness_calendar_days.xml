@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_below="@+id/fitness_calendar_day_of_week">
+    
+    <!-- 가운데 정렬을 위한 영역 -->
+    <LinearLayout 
+	    android:layout_width="360dp"
+	    android:layout_height="match_parent"
+	    android:layout_centerHorizontal="true"
+	    android:orientation="vertical"
+	    android:paddingLeft="19.75dp"
+	    android:paddingRight="20dp">
+        
+        <!-- 1주 -->
+        <LinearLayout style="@style/calendar_week">
+	        <include android:id="@+id/calendar_day00" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day01" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day02" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day03" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day04" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day05" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day06" layout="@layout/layout_fitness_calendar_day"/>
+	    </LinearLayout>
+	    
+        <!-- 2주 -->
+	    <LinearLayout style="@style/calendar_week">
+	        <include android:id="@+id/calendar_day10" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day11" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day12" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day13" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day14" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day15" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day16" layout="@layout/layout_fitness_calendar_day"/>
+	    </LinearLayout>
+	    
+	    <!-- 3주 -->
+	    <LinearLayout style="@style/calendar_week">
+	        <include android:id="@+id/calendar_day20" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day21" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day22" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day23" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day24" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day25" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day26" layout="@layout/layout_fitness_calendar_day"/>
+	    </LinearLayout>
+	    
+	    <!-- 4주 -->
+	    <LinearLayout style="@style/calendar_week">
+	        <include android:id="@+id/calendar_day30" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day31" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day32" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day33" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day34" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day35" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day36" layout="@layout/layout_fitness_calendar_day"/>
+	    </LinearLayout>
+	    
+	    <!-- 5주 -->
+	    <LinearLayout style="@style/calendar_week">
+	        <include android:id="@+id/calendar_day40" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day41" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day42" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day43" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day44" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day45" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day46" layout="@layout/layout_fitness_calendar_day"/>
+	    </LinearLayout>
+	    
+	    <!-- 6주 -->
+	    <LinearLayout style="@style/calendar_week">
+	        <include android:id="@+id/calendar_day50" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day51" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day52" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day53" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day54" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day55" layout="@layout/layout_fitness_calendar_day"/>
+	        <include android:id="@+id/calendar_day56" layout="@layout/layout_fitness_calendar_day"/>
+	    </LinearLayout>
+    
+    </LinearLayout>
+    
+</RelativeLayout>

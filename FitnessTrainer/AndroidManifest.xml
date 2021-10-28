@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.samsung.hsl.fitnesstrainer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.samsung.hsl.fitnesstrainer.service.FitnessTrainerApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.samsung.hsl.fitnesstrainer.ui.FitnessTrainerMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Trainer UI -->
+        <activity
+            android:name="com.samsung.hsl.fitnesstrainer.ui.FitnessTrainerUserListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.samsung.hsl.fitnesstrainer.ui.FitnessTrainerSignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.samsung.hsl.fitnesstrainer.ui.FitnessTrainerUserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.samsung.hsl.fitnesstrainer.ui.FitnessTrainerCalendarDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.samsung.hsl.fitnesstrainer.ui.FitnessTrainerMemberConnectAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.samsung.hsl.fitnesstrainer.ui.FitnessTrainerMemberSelectConnectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.samsung.hsl.fitnesstrainer.ui.FitnessTrainerUserReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.samsung.hsl.fitnesstrainer.ui.FitnessAimManagerActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Service -->
+        <service android:name="com.samsung.hsl.fitnesstrainer.service.FitnessTrainerService" />
+    </application>
+
+</manifest>

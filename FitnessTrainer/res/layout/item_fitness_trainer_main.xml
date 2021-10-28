@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 회원 상태 리스트 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fitness_trainer_main_item"
+    android:layout_width="match_parent"
+    android:layout_height="61.75dp"
+    android:layout_below="@+id/finess_member_main_sub_bar"
+    android:background="@drawable/fitness_member_main_border" >
+
+    <!-- 회원에 대한 정보 -->
+
+    <LinearLayout
+        android:id="@+id/fitness_trainer_main_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:weightSum="5" >
+
+            <!-- 이름 -->
+
+            <TextView
+                android:id="@+id/fitness_trainer_main_item_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/trainer_main_aim"
+                android:textSize="15sp" />
+
+            <!-- 심박수 -->
+
+            <RelativeLayout
+                android:id="@+id/fitness_trainer_main_item_heartrate_container"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <!-- 심박값 -->
+
+                    <TextView
+                        android:id="@+id/fitness_trainer_main_item_heartrate_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/trainer_main_aim"
+                        android:textSize="15sp" />
+
+                    <!-- 하트 아이콘 -->
+
+                    <ImageView
+                        android:id="@+id/fitness_trainer_main_item_heartrate_icon"
+                        android:layout_width="16dp"
+                        android:layout_height="13.75dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@id/fitness_trainer_main_item_heartrate_value"
+                        android:src="@drawable/fitness_member_main_02_aim_heart" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- 칼로리 -->
+
+            <TextView
+                android:id="@+id/fitness_trainer_main_item_calorie"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:textColor="@color/trainer_main_normal"
+                android:textSize="15sp" />
+
+            <!-- 피부온도 -->
+
+            <TextView
+                android:id="@+id/fitness_trainer_main_item_skin_temperature"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:textColor="@color/trainer_main_normal"
+                android:textSize="15sp" />
+
+            <!-- 심박상태 -->
+			
+            <TextView
+                android:id="@+id/fitness_trainer_main_item_state"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/trainer_main_aim"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+          <!-- 디바이스명 -->
+	 <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="0.4"
+	            android:orientation="horizontal"
+	            android:weightSum="1" >
+
+	        <TextView
+	            android:id="@+id/fitness_trainer_main_item_device_name"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="0.45"
+	            android:gravity="top"
+	            android:textColor="@color/trainer_main_aim"
+	            android:textSize="13sp" />
+	      
+	         <TextView
+		            android:id="@+id/fitness_trainer_main_item_device_version"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:layout_gravity="center"
+		            android:layout_weight="0.15"
+		            android:textColor="@color/trainer_main_normal"
+	                android:textSize="13sp"
+		          />
+ 				<ProgressBar
+			        android:id="@+id/fitness_trainer_main_item_device_battery"
+			        style="?android:attr/progressBarStyleHorizontal"
+			        android:progressDrawable="@drawable/myprogressbar" 
+			        android:gravity="center"
+		            android:layout_gravity="center"
+			        android:layout_width="0dp"
+			        android:progress="50"
+			        android:layout_weight="0.25"
+			        android:background="@drawable/fitness_device_connect_battery_gage_frame"
+			        android:layout_height="wrap_content"
+			        android:max="100"/>
+ 				<ImageView
+			        android:id="@+id/fitness_trainer_main_item_device_battery_icon"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			      	android:src="@drawable/fitness_device_connect_battery_gage_icon"
+			        android:layout_weight="0.05" />
+		         <TextView
+		            android:id="@+id/fitness_trainer_main_item_device_battery_text"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:layout_gravity="center"
+		            android:layout_weight="0.1"
+		            android:textColor="@color/trainer_main_normal"
+	                android:textSize="13sp"
+		            />
+
+	   </LinearLayout>
+    </LinearLayout>
+    <!-- 수정 / 삭제 버튼 -->
+
+    <RelativeLayout
+        android:id="@+id/fitness_trainer_main_item_button_container"
+        android:layout_width="138.5dp"
+        android:layout_height="61.75dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/fitness_trainer_main_delete_button"
+            android:layout_width="69.25dp"
+            android:layout_height="61.75dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/fitness_member_main_02_delete_btn" />
+    </RelativeLayout>
+
+    <!-- 사용자 추가 버튼 -->
+
+    <RelativeLayout
+        android:id="@+id/fitness_trainer_main_add_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" >
+
+        <ImageButton
+            android:id="@+id/fitness_trainer_main_add_button"
+            android:layout_width="25.25dp"
+            android:layout_height="26.00dp"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:src="@drawable/fitness_member_main_add_btn" />
+    </RelativeLayout>
+
+</RelativeLayout>

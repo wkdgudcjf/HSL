@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fitness_top_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="61.25dp"
+    android:background="@drawable/fitness_main_top_bar" >
+    
+    <ImageButton
+        android:id="@+id/fitness_top_bar_left_imagebutton"
+        android:layout_width="21.50dp"
+        android:layout_height="17.00dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/transparent"
+        android:visibility="invisible"
+        android:src="@drawable/fitness_main_menu_btn" />
+
+    <TextView
+        android:id="@+id/fitness_top_bar_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        android:fontFamily="sans-serif-bold"
+        android:text="@string/string_fitness_main_title"
+        android:textColor="@color/main_text_color"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/fitness_top_bar_right_imagebutton"
+        android:layout_width="15.75dp"
+        android:layout_height="17.25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="21.75dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/transparent"
+        android:visibility="invisible"
+        android:src="@drawable/fitness_main_home_btn" />
+
+</RelativeLayout>

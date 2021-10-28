@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="navigation">
+        <item>Logout</item>
+        <item>Connection</item>
+    </string-array>
+</resources>

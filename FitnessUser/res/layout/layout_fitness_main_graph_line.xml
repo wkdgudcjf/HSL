@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="279.5dp"
+    android:layout_centerHorizontal="true" >
+
+    <ImageView
+        android:id="@+id/fitness_main_graph_base_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="268.25dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/fitness_main_02_graph_base" />
+
+    <RelativeLayout
+        android:id="@+id/fitness_main_graph_line_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32.5dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp" >
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/fitness_main_graph_red_control_bar"
+        android:layout_width="5.50dp"
+        android:layout_height="243.50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="36dp"
+        android:layout_marginRight="62.25dp"
+        android:src="@drawable/fitness_main_02_graph_red_control_bar" />
+
+    <!-- 사용자의 카르보넨 공식을 적용한 심박수 범위 : 고강 -->
+
+    <TextView
+        android:id="@+id/fitness_main_graph_line_level4_range_textview"
+        android:layout_width="64dp"
+        android:layout_height="29.5dp"
+        android:layout_alignRight="@id/fitness_main_graph_base_imageview"
+        android:layout_alignTop="@id/fitness_main_graph_base_imageview"
+        android:layout_marginRight="56.25dp"
+        android:gravity="right"
+        android:textColor="@color/aim_manager_strength_range"
+        android:textSize="10sp" />
+    <!-- 사용자의 카르보넨 공식을 적용한 심박수 범위 : 강 -->
+
+    <TextView
+        android:id="@+id/fitness_main_graph_line_level3_range_textview"
+        android:layout_width="64dp"
+        android:layout_height="29.5dp"
+        android:layout_alignRight="@id/fitness_main_graph_base_imageview"
+        android:layout_below="@id/fitness_main_graph_line_level4_range_textview"
+        android:layout_marginRight="56.25dp"
+        android:gravity="right"
+        android:layout_marginTop="33.25dp"
+        android:textColor="@color/aim_manager_strength_range"
+        android:textSize="10sp" />
+    <!-- 사용자의 카르보넨 공식을 적용한 심박수 범위 : 중 -->
+
+    <TextView
+        android:id="@+id/fitness_main_graph_line_level2_range_textview"
+        android:layout_width="64dp"
+        android:layout_height="29.5dp"
+        android:layout_alignRight="@id/fitness_main_graph_base_imageview"
+        android:layout_below="@id/fitness_main_graph_line_level3_range_textview"
+        android:layout_marginRight="56.25dp"
+        android:gravity="right"
+        android:layout_marginTop="35.75dp"
+        android:textColor="@color/aim_manager_strength_range"
+        android:textSize="10sp" />
+    <!-- 사용자의 카르보넨 공식을 적용한 심박수 범위 : 약 -->
+
+    <TextView
+        android:id="@+id/fitness_main_graph_line_level1_range_textview"
+        android:layout_width="64dp"
+        android:layout_height="29.5dp"
+        android:layout_alignRight="@id/fitness_main_graph_base_imageview"
+        android:layout_below="@id/fitness_main_graph_line_level2_range_textview"
+        android:layout_marginRight="56.25dp"
+        android:gravity="right"
+        android:layout_marginTop="32.75dp"
+        android:textColor="@color/aim_manager_strength_range"
+        android:textSize="10sp" />
+
+</RelativeLayout>

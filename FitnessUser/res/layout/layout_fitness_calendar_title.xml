@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="94dp"
+    android:background="@color/main_background_clolor" >
+
+    <!-- 가운데 화살표와 년월 영역 -->
+
+    <RelativeLayout
+        android:id="@+id/fitness_calendar_center_layout"
+        android:layout_width="197.5dp"
+        android:layout_height="21.75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31.00dp" >
+
+        <!-- 왼쪽 버튼 -->
+
+        <ImageButton
+            android:id="@+id/fitness_calendar_left_imagebutton"
+            android:layout_width="14.00dp"
+            android:layout_height="21.75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@drawable/fitness_calendar_left" />
+
+        <!-- 오른쪽 버튼 -->
+
+        <ImageButton
+            android:id="@+id/fitness_calendar_right_imagebutton"
+            android:layout_width="14.00dp"
+            android:layout_height="21.75dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@drawable/fitness_calendar_right" />
+
+        <!-- 년, 월 -->
+
+        <TextView
+            android:id="@+id/fitness_calendar_year_month_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/day_of_week_weekday"
+            android:textSize="21.52sp" />
+        
+    </RelativeLayout>
+	<TextView
+            android:id="@+id/fitness_calendar_consider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:layout_toRightOf="@id/fitness_calendar_center_layout"
+            android:text="@string/string_fitness_calendar_consider"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/day_of_week_weekday"
+            android:textSize="10sp" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fitness_calendar_loading_bg" >
+
+    <ImageView
+        android:id="@+id/fitness_calendar_loading_imageview"
+        android:layout_width="38.5dp"
+        android:layout_height="38.5dp"
+        android:layout_centerInParent="true"
+		android:background="@drawable/fitness_calendar_loading_animation"/>
+        
+</RelativeLayout>

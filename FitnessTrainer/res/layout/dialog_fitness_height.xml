@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="335dp"
+    android:layout_height="290.25dp"
+    android:orientation="vertical"
+    android:focusable="true"
+	android:focusableInTouchMode="true"
+    android:background="@drawable/fitness_sign_up_popup_height_board"
+    android:weightSum="1" >
+       
+    
+	<EditText
+		        android:id="@+id/fitness_sign_up_popup_height_2_text"
+		        android:layout_width="34.25dp"
+		        android:layout_height="34.75dp"
+		        android:layout_marginLeft="180.25dp"
+		        android:layout_marginTop="116.25dp"
+		        android:fontFamily="sans-serif-bold"
+		        android:textColor="#333333"
+		        android:singleLine="true"
+		        android:text="0"
+		        android:maxLength="1"
+		        android:gravity="center" 
+		        android:lines="1"
+		        android:textSize="18.26sp" />
+	
+	<EditText
+		        android:id="@+id/fitness_sign_up_popup_height_1_text"
+		        android:layout_width="77.75dp"
+		        android:layout_height="34.25dp"
+		        android:layout_marginLeft="71.75dp"
+		        android:layout_marginTop="116.25dp"
+		        android:fontFamily="sans-serif-bold"
+		        android:maxLength="3"
+		        android:textColor="#333333"
+		        android:singleLine="true"
+		        android:text="170"
+		        android:gravity="center" 
+		        android:lines="1"
+		        android:textSize="18.26sp" />
+		      
+    <ImageButton
+			     android:id="@+id/fitness_sign_up_popup_height_1_triangle_upper"
+			     android:layout_width="17.75dp"
+			     android:layout_height="15.5dp"
+			     android:layout_marginTop="86.5dp"
+			     android:layout_marginLeft="102dp"
+			     android:background="@color/transparent"
+			     android:src="@drawable/fitness_sign_up_popup_height_triangle_upper" />
+    
+    <ImageButton
+			     android:id="@+id/fitness_sign_up_popup_height_2_triangle_upper"
+			     android:layout_width="17.75dp"
+			     android:layout_height="15.5dp"
+			     android:layout_marginTop="86.5dp"
+			     android:layout_marginLeft="188dp"
+			     android:background="@color/transparent"
+			     android:src="@drawable/fitness_sign_up_popup_height_triangle_upper" />
+   	
+    <ImageButton
+		    	 android:id="@+id/fitness_sign_up_popup_height_1_triangle_below"
+		    	 android:layout_width="17.75dp"
+			     android:layout_height="15.5dp"
+			     android:layout_marginTop="167dp"
+			     android:layout_marginLeft="102dp"
+			     android:background="@color/transparent"
+
+			     android:src="@drawable/fitness_sign_up_popup_height_triangle_below" />
+    
+    <ImageButton
+		    	 android:id="@+id/fitness_sign_up_popup_height_2_triangle_below"
+		    	 android:layout_width="17.75dp"
+			     android:layout_height="15.5dp"
+			     android:layout_marginTop="167dp"
+			     android:background="@color/transparent"
+			     android:layout_marginLeft="188dp"
+			     android:src="@drawable/fitness_sign_up_popup_height_triangle_below" />
+    
+    
+     <ImageButton
+		    	 android:id="@+id/fitness_sign_up_popup_height_confirm_btn"
+		    	 android:layout_width="122dp"
+			     android:layout_height="39.75dp"
+			     android:layout_marginTop="203.75dp"
+			     android:background="@color/transparent"
+			     android:layout_marginLeft="36dp"
+
+			     android:src="@drawable/fitness_sign_up_popup_height_confirm_btn" />
+     
+      <ImageButton
+		    	 android:id="@+id/fitness_sign_up_popup_height_cancel_btn"
+		    	 android:layout_width="122dp"
+			     android:layout_height="39.75dp"
+			     android:layout_marginTop="203.75dp"
+			     android:background="@color/transparent"
+			     android:layout_marginLeft="172dp"
+	
+			     android:src="@drawable/fitness_sign_up_popup_height_cancel_btn" />
+ </RelativeLayout>

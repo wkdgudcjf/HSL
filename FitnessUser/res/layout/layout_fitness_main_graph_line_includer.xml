@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_clolor" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <include
+            android:id="@+id/fitness_main_graph_line_include"
+            layout="@layout/layout_fitness_main_graph_line" />
+        <!-- 알람 문구 영역 -->
+
+        <TextView
+            android:id="@+id/fitness_main_graph_message_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="50.5dp"
+            android:layout_below="@id/fitness_main_graph_line_include"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="7.00dp"
+            android:gravity="center"
+            android:text="@string/string_fitness_main_message_none"
+            android:textColor="@color/donut_progress_not_used"
+            android:lineSpacingExtra="4dp"
+            android:textSize="15.75sp" />
+        
+        <!-- 운동 시간 영역 -->
+
+        <TextView
+            android:id="@+id/fitness_main_graph_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fitness_main_graph_message_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:textSize="15.75sp"
+            android:textColor="@color/donut_progress_not_used" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_clolor" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:orientation="vertical" >
+
+        <!-- 메인 Top Bar -->
+
+        <include layout="@layout/layout_fitness_top_bar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" >
+
+            <!-- 상단 사진 -->
+
+            <include layout="@layout/layout_fitness_sign_up_photo" />
+
+            <!-- 정보 리스트 -->
+
+            <ImageView
+                android:id="@+id/fitness_sign_up_list_icon"
+                android:layout_width="337.75dp"
+                android:layout_height="237.25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/layout_sign_up_photo"
+                android:layout_marginLeft="22.25dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="center"
+                android:src="@drawable/fitness_sign_up_list_icon" />
+
+            <!-- 이메일 -->
+
+            <EditText
+                android:id="@+id/fitness_sign_up_id_textview"
+                android:layout_width="200dp"
+                android:layout_height="28.75dp"
+                android:layout_below="@id/layout_sign_up_photo"
+                android:layout_marginLeft="70.75dp"
+                android:background="@color/transparent"
+                android:focusable="true"
+                android:hint="@string/string_fitness_sign_up_hint_email"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#86C148"
+                android:textSize="18.2sp" />
+
+            <EditText
+                android:id="@+id/fitness_sign_up_pw_textview"
+                android:layout_width="200dp"
+                android:layout_height="28.75dp"
+                android:layout_below="@id/fitness_sign_up_id_textview"
+                android:background="@color/transparent"
+                android:focusable="true"
+                android:hint="@string/string_fitness_sign_up_hint_password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#86C148"
+                android:textSize="18.2sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/fitness_sign_up_pw2_textview"
+                android:layout_width="200dp"
+                android:layout_height="28.75dp"
+                android:layout_below="@id/fitness_sign_up_pw_textview"
+                android:background="@color/transparent"
+                android:focusable="true"
+                android:hint="@string/string_fitness_sign_up_hint_password2"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#86C148"
+                android:textSize="18.2sp"
+                android:visibility="gone" />
+
+            <!-- 이름 -->
+
+            <EditText
+                android:id="@+id/fitness_sign_up_name_textview"
+                android:layout_width="200dp"
+                android:layout_height="28.75dp"
+                android:layout_below="@id/fitness_sign_up_pw2_textview"
+                android:layout_marginLeft="70.75dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/transparent"
+                android:focusable="true"
+                android:hint="@string/string_fitness_sign_up_hint_name"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#86C148"
+                android:textSize="18.2sp" />
+
+            <!-- 생년월일 -->
+
+            <TextView
+                android:id="@+id/fitness_sign_up_birth_textview"
+                android:layout_width="107dp"
+                android:layout_height="28.75dp"
+                android:layout_below="@id/fitness_sign_up_name_textview"
+                android:layout_marginLeft="70.75dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/transparent"
+                android:gravity="left"
+                android:hint="@string/string_fitness_sign_up_hint_birthday"
+                android:textColor="#333333"
+                android:textColorHint="#86C148"
+                android:textSize="18.2sp" />
+
+            <!-- 성별 -->
+            <!-- 남자 텍스트 -->
+
+            <TextView
+                android:id="@+id/fitness_sign_up_man_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="28.75dp"
+                android:layout_below="@id/fitness_sign_up_birth_textview"
+                android:layout_marginLeft="70.75dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/transparent"
+                android:gravity="left"
+                android:onClick="onClick"
+                android:text="@string/string_fitness_sign_up_hint_man"
+                android:textColor="#86C148"
+                android:textSize="18.2sp" />
+
+            <!-- 남자 버튼 -->
+
+            <ImageButton
+                android:id="@+id/fitness_sign_up_gender_man_btn"
+                android:layout_width="17.75dp"
+                android:layout_height="17.75dp"
+                android:layout_below="@id/fitness_sign_up_birth_textview"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="28dp"
+                android:layout_toRightOf="@id/fitness_sign_up_man_textview"
+                android:onClick="onClick"
+                android:src="@drawable/fitness_intro_login_auto_login_btn_selector" />
+
+            <!-- 여자 텍스트 -->
+
+            <TextView
+                android:id="@+id/fitness_sign_up_women_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="28.75dp"
+                android:layout_below="@id/fitness_sign_up_birth_textview"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/fitness_sign_up_gender_man_btn"
+                android:background="@color/transparent"
+                android:gravity="left"
+                android:onClick="onClick"
+                android:text="@string/string_fitness_sign_up_hint_women"
+                android:textColor="#86C148"
+                android:textSize="18.2sp" />
+
+            <!-- 여자 버튼 -->
+
+            <ImageButton
+                android:id="@+id/fitness_sign_up_gender_women_btn"
+                android:layout_width="17.75dp"
+                android:layout_height="17.75dp"
+                android:layout_below="@id/fitness_sign_up_birth_textview"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="28dp"
+                android:layout_toRightOf="@+id/fitness_sign_up_women_textview"
+                android:onClick="onClick"
+                android:src="@drawable/fitness_intro_login_auto_login_btn_selector" />
+
+            <!-- 키 -->
+
+            <TextView
+                android:id="@+id/fitness_sign_up_height_textview"
+                android:layout_width="107dp"
+                android:layout_height="28.75dp"
+                android:layout_below="@id/fitness_sign_up_man_textview"
+                android:layout_marginLeft="70.75dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/transparent"
+                android:gravity="left"
+                android:hint="@string/string_fitness_sign_up_hint_height"
+                android:textColor="#333333"
+                android:textColorHint="#86C148"
+                android:textSize="18.2sp" />
+
+            <!-- 몸무게 -->
+
+            <TextView
+                android:id="@+id/fitness_sign_up_weight_textview"
+                android:layout_width="107dp"
+                android:layout_height="28.75dp"
+                android:layout_below="@id/fitness_sign_up_man_textview"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/fitness_sign_up_height_textview"
+                android:background="@color/transparent"
+                android:gravity="left"
+                android:hint="@string/string_fitness_sign_up_hint_weight"
+                android:textColor="#333333"
+                android:textColorHint="#86C148"
+                android:textSize="18.2sp" />
+
+            <!-- 확인 -->
+
+            <TextView
+                android:id="@+id/fitness_sign_up_btn"
+                android:layout_width="257.75dp"
+                android:layout_height="41dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/fitness_sign_up_weight_textview"
+                android:layout_marginLeft="51.125dp"
+                android:layout_marginTop="35.25dp"
+                android:background="@drawable/fitness_intro_login_btn"
+                android:gravity="center"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:text="@string/string_fitness_intro_sign_up_button"
+                android:textColor="@color/main_text_color" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

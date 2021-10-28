@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_clolor" >
+
+    <ImageView
+        android:id="@+id/fitness_aim_manager_level_setting_the_highst"
+        android:layout_width="66dp"
+        android:layout_height="13.25dp"
+        android:layout_marginLeft="262dp"
+        android:layout_marginTop="85.25dp"
+        android:src="@drawable/fitness_aim_manager_level_setting_the_highst" />
+
+    <ImageView
+        android:id="@+id/fitness_aim_manager_level_setting_level4_icon"
+        android:layout_width="35.5dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="125.5dp"
+        android:src="@drawable/fitness_aim_manager_level_setting_level4_icon" />
+
+    <ImageButton
+        android:id="@+id/fitness_aim_manager_level_setting_level4_bar"
+        android:layout_width="249.75dp"
+        android:layout_height="54.75dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="114.75dp"
+        android:src="@drawable/fitness_aim_manager_level_setting_level4_bar_selector" />
+
+    <ImageView
+        android:id="@+id/fitness_aim_manager_level_setting_level3_icon"
+        android:layout_width="35.5dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/fitness_aim_manager_level_setting_level4_icon"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="33.5dp"
+        android:src="@drawable/fitness_aim_manager_level_setting_level3_icon" />
+
+    <ImageButton
+        android:id="@+id/fitness_aim_manager_level_setting_level3_bar"
+        android:layout_width="249.75dp"
+        android:layout_height="54.75dp"
+        android:layout_below="@id/fitness_aim_manager_level_setting_level4_bar"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/fitness_aim_manager_level_setting_level3_bar_selector" />
+
+    <ImageView
+        android:id="@+id/fitness_aim_manager_level_setting_level2_icon"
+        android:layout_width="35.5dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/fitness_aim_manager_level_setting_level3_icon"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="33.5dp"
+        android:src="@drawable/fitness_aim_manager_level_setting_level2_icon" />
+
+    <ImageButton
+        android:id="@+id/fitness_aim_manager_level_setting_level2_bar"
+        android:layout_width="249.75dp"
+        android:layout_height="54.75dp"
+        android:layout_below="@id/fitness_aim_manager_level_setting_level3_bar"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/fitness_aim_manager_level_setting_level2_bar_selector" />
+
+    <ImageView
+        android:id="@+id/fitness_aim_manager_level_setting_level1_icon"
+        android:layout_width="35.5dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/fitness_aim_manager_level_setting_level2_icon"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="33.5dp"
+        android:src="@drawable/fitness_aim_manager_level_setting_level1_icon" />
+
+    <ImageButton
+        android:id="@+id/fitness_aim_manager_level_setting_level1_bar"
+        android:layout_width="249.75dp"
+        android:layout_height="54.75dp"
+        android:layout_below="@id/fitness_aim_manager_level_setting_level2_bar"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/fitness_aim_manager_level_setting_level1_bar_selector" />
+
+    <Button
+        android:id="@+id/fitness_aim_manager_confirm_btn"
+        android:layout_width="295dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="430.75dp"
+        android:background="@color/aim_manager_button"
+        android:textSize="18sp"
+        android:text="@string/string_fitness_aim_manager_complete_button" />
+
+    <!-- 사용자의 카르보넨 공식을 적용한 심박수 범위 : 고강 -->
+
+    <TextView
+        android:id="@+id/fitness_aim_manager_level4_range_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/fitness_aim_manager_level_setting_level4_bar"
+        android:layout_alignTop="@id/fitness_aim_manager_level_setting_level4_bar"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="14dp"
+        android:gravity="right"
+        android:textColor="@color/aim_manager_strength_range"
+        android:textSize="10sp" />
+    <!-- 사용자의 카르보넨 공식을 적용한 심박수 범위 : 강 -->
+
+    <TextView
+        android:id="@+id/fitness_aim_manager_level3_range_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/fitness_aim_manager_level_setting_level3_bar"
+        android:layout_alignTop="@id/fitness_aim_manager_level_setting_level3_bar"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="14dp"
+        android:gravity="right"
+        android:textColor="@color/aim_manager_strength_range"
+        android:textSize="10sp" />
+    <!-- 사용자의 카르보넨 공식을 적용한 심박수 범위 : 중 -->
+
+    <TextView
+        android:id="@+id/fitness_aim_manager_level2_range_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/fitness_aim_manager_level_setting_level2_bar"
+        android:layout_alignTop="@id/fitness_aim_manager_level_setting_level2_bar"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="14dp"
+        android:gravity="right"
+        android:textColor="@color/aim_manager_strength_range"
+        android:textSize="10sp" />
+    <!-- 사용자의 카르보넨 공식을 적용한 심박수 범위 : 약 -->
+
+    <TextView
+        android:id="@+id/fitness_aim_manager_level1_range_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/fitness_aim_manager_level_setting_level1_bar"
+        android:layout_alignTop="@id/fitness_aim_manager_level_setting_level1_bar"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="14dp"
+        android:gravity="right"
+        android:textColor="@color/aim_manager_strength_range"
+        android:textSize="10sp" />
+
+    <!-- 현재 안정심박수 -->
+
+    <TextView
+        android:id="@+id/fitness_aim_manager_stable_heartrate_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/fitness_aim_manager_level_setting_the_highst"
+        android:layout_marginTop="63.25dp"
+        android:textColor="@color/aim_manager_strength_range"
+        android:textSize="14sp" />
+</RelativeLayout>

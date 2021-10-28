@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="1" >
+
+	<LinearLayout
+	    android:layout_width="360dp"
+	    android:layout_height="95dp"
+	    android:layout_weight="0.9"
+	    android:orientation="horizontal"
+	    android:weightSum="1" >
+
+	    <ImageView
+	        android:id="@+id/fitness_device_connect_icon"
+	        android:layout_width="19dp"
+	        android:layout_height="31dp"
+	        android:layout_gravity="center"
+	      	android:src="@drawable/fitness_device_connect_ble_icon"
+	        android:layout_weight="0.2" />
+	
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.6"
+	        android:orientation="vertical"
+	        android:weightSum="1" >
+	
+	        <TextView
+	            android:id="@+id/connection_item_text"
+	            android:layout_width="fill_parent"
+	            android:layout_height="16.25dp"
+	            android:gravity="center"
+	             android:layout_gravity="center"
+	            android:layout_weight="0.6"
+	            android:textColor="#333333"
+                android:fontFamily="sans-serif-bold"
+                android:textSize="16.25sp"
+	            android:text="Fitness" />
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/connection_item_connected_list"
+			    android:layout_weight="0.4"
+			    android:orientation="horizontal"
+			    android:weightSum="1" >
+ 				<TextView
+		            android:id="@+id/connection_item_version"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:layout_gravity="center"
+		            android:layout_weight="0.3"
+		            android:textColor="#333333"
+	                android:fontFamily="sans-serif-bold"
+	                android:textSize="16.25sp"
+		            android:text="SW HW" />
+ 				<ProgressBar
+			        android:id="@+id/connection_item_battery"
+			        style="?android:attr/progressBarStyleHorizontal"
+			        android:progressDrawable="@drawable/myprogressbar" 
+			        android:gravity="center"
+		            android:layout_gravity="center"
+			        android:layout_width="wrap_content"
+			        android:progress="50"
+			        android:layout_weight="0.35"
+			        android:background="@drawable/fitness_device_connect_battery_gage_frame"
+			        android:layout_height="wrap_content"
+			        android:max="100"/>
+ 				<ImageView
+			        android:id="@+id/connection_item_battery_icon"
+			        android:layout_width="10dp"
+			        android:layout_height="16.25dp"
+			        android:layout_gravity="center"
+			      	android:src="@drawable/fitness_device_connect_battery_gage_icon"
+			        android:layout_weight="0.05" />
+		         <TextView
+		            android:id="@+id/connection_item_battery_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:layout_gravity="center"
+		            android:layout_weight="0.3"
+		            android:textColor="#333333"
+	                android:fontFamily="sans-serif-bold"
+	                android:textSize="16.25sp"
+		            android:text="50%" />
+	        </LinearLayout>
+	    </LinearLayout>
+
+	    <ImageButton
+	        android:id="@+id/connection_item_connect"
+	        android:layout_width="43.25dp"
+	        android:layout_height="24.5dp"
+	         android:background="@color/transparent"
+	        android:layout_gravity="center"
+	        android:layout_weight="0.2"
+	        android:src="@drawable/fitness_device_connect_btn_bar_selector" />
+	</LinearLayout>
+
+	<ImageView
+	    android:layout_width="360dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.1"
+	    android:src="@drawable/fitness_device_connect_line" />
+
+</LinearLayout>

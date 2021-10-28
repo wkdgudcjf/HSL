@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/fitness_calendar_loading_animation01" android:duration="200"/>
+	<item android:drawable="@drawable/fitness_calendar_loading_animation02" android:duration="200"/>
+	<item android:drawable="@drawable/fitness_calendar_loading_animation03" android:duration="200"/>
+	<item android:drawable="@drawable/fitness_calendar_loading_animation04" android:duration="200"/>
+	<item android:drawable="@drawable/fitness_calendar_loading_animation05" android:duration="200"/>
+	<item android:drawable="@drawable/fitness_calendar_loading_animation06" android:duration="200"/>
+	<item android:drawable="@drawable/fitness_calendar_loading_animation07" android:duration="200"/>
+	<item android:drawable="@drawable/fitness_calendar_loading_animation08" android:duration="200"/>
+	<item android:drawable="@drawable/fitness_calendar_loading_animation09" android:duration="200"/>
+	<item android:drawable="@drawable/fitness_calendar_loading_animation10" android:duration="200"/>
+	<item android:drawable="@drawable/fitness_calendar_loading_animation11" android:duration="200"/>
+	<item android:drawable="@drawable/fitness_calendar_loading_animation12" android:duration="200"/>
+</animation-list>

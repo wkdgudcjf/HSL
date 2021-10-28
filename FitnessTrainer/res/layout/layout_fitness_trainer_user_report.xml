@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_clolor"
+    android:orientation="vertical" >
+
+    <!-- 메인 Top Bar -->
+
+    <include layout="@layout/layout_fitness_top_bar" />
+
+    <!-- 서브 Top Bar -->
+
+    <include layout="@layout/layout_fitness_sub_top_bar" />
+
+    <!-- 회원 보드 영역 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include
+                android:id="@+id/fitness_trainer_user_board"
+                layout="@layout/layout_fitness_trainer_user_board" />
+
+            <!-- 실시간 운동정보 및 히스토리 영역 -->
+
+            <RelativeLayout
+                android:id="@+id/fitness_main_main_board_layout"
+                android:layout_width="360dp"
+                android:layout_height="518.75dp"
+                android:layout_below="@id/fitness_trainer_user_board"
+                android:layout_centerHorizontal="true" >
+
+                <com.samsung.hsl.fitnesstrainer.ui.FitnessBaseViewPager
+                    android:id="@+id/fitness_main_main_board_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

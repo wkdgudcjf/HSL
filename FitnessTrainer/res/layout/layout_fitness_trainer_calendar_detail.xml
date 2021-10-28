@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fitness_main_grey_bg"
+    android:orientation="vertical" >
+
+    <!-- Tob Bar -->
+
+    <include layout="@layout/layout_fitness_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 회원 정보 -->
+            <include android:id="@+id/fitness_trainer_user_board" layout="@layout/layout_fitness_trainer_user_board" />
+
+            <!-- 년, 월 -->
+
+            <include
+                android:id="@+id/fitness_calendar_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:layout_marginTop="9dp"
+                android:layout_below="@id/fitness_trainer_user_board"
+                layout="@layout/layout_fitness_calendar_detail_title" />
+            <!-- 그래프 -->
+
+            <RelativeLayout
+                android:id="@+id/fitness_calendar_detail_graph_layout"
+                android:layout_width="match_parent"
+                android:layout_height="322.00dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/fitness_calendar_detail_title"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/main_background_clolor"
+                android:paddingBottom="34dp" >
+
+                <include layout="@layout/layout_fitness_main_graph_line" />
+            </RelativeLayout>
+
+            <!-- 상태 정보 -->
+
+            <RelativeLayout
+                android:id="@+id/fitness_calendar_detail_range_status_layout"
+                android:layout_width="match_parent"
+                android:layout_height="153.25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/fitness_calendar_detail_graph_layout"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/fitness_main_sub_board" >
+
+                <include layout="@layout/layout_fitness_main_range_status" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

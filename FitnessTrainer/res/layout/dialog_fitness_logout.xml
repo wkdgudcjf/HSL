@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fitness_slide_menu_logout_pop_up_layout"
+    android:layout_width="335dp"
+    android:layout_height="190dp"
+    android:background="@drawable/fitness_slide_menu_logout_pop_board" >
+
+    <ImageButton
+        android:id="@+id/fitness_slide_menu_logout_pop_up_confirm_btn_imagebutton"
+        android:layout_width="122dp"
+        android:layout_height="39.75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="38.50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40.75dp"
+        android:src="@drawable/fitness_slide_menu_logout_pop_up_confirm_btn" />
+
+    <ImageButton
+        android:id="@+id/fitness_slide_menu_logout_pop_up_cancel_btn_imagebutton"
+        android:layout_width="122dp"
+        android:layout_height="39.75dp"
+        android:layout_toRightOf="@id/fitness_slide_menu_logout_pop_up_confirm_btn_imagebutton"
+        android:layout_marginLeft="14.00dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40.75dp"
+        android:src="@drawable/fitness_slide_menu_logout_pop_up_cancel_btn" />
+
+</RelativeLayout>

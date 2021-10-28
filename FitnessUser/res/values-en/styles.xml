@@ -1,0 +1,67 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <!-- 요일 -->
+    <style name="calendar_day_of_week">
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">22.25dp</item>
+        <item name="android:textSize">10.5sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginLeft">23.5dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <!-- 주 -->
+    <style name="calendar_week">
+        <item name="android:layout_height">75dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">7</item>
+        <item name="android:background">@drawable/fitness_calendar_border</item>
+    </style>
+    
+    <style name="calendar_trainer_week">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">7</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:paddingLeft">19.75dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:background">@drawable/fitness_calendar_border</item>
+    </style>
+
+    <!-- 메인메뉴 아래 상태 레이블 글자 크기 -->
+    <style name="style_fitness_main_range_heartrate">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">68.00dp</item>
+        <item name="android:layout_height">30.25dp</item>
+        <item name="android:layout_marginTop">-5dp</item>
+    </style>
+    
+    <style name="style_fitness_main_range_calorie">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">68.00dp</item>
+        <item name="android:layout_height">24.50dp</item>
+        <item name="android:layout_marginTop">0.75dp</item>
+    </style>
+    
+    <style name="style_fitness_main_range_skin_temperature">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30.25dp</item>
+        <item name="android:layout_marginTop">-5dp</item>
+    </style>
+    
+    <style name="style_fitness_main_range_aim">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">68.00dp</item>
+        <item name="android:layout_height">24.50dp</item>
+        <item name="android:layout_marginTop">0.75dp</item>
+    </style>
+    
+</resources>

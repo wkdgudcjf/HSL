@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/fitness_aim_manager_level_setting_level2_bar" android:state_selected="false"/>
+    <item android:drawable="@drawable/fitness_aim_manager_level_setting_level2_bar_selected"/>
+</selector>

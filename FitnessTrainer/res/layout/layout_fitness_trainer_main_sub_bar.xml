@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/finess_trainer_main_sub_bar"
+    android:layout_width="match_parent"
+    android:layout_height="41dp"
+    android:layout_below="@+id/fitness_top_bar_layout"
+    android:background="@drawable/fitness_member_main_sub_bar"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:weightSum="5" >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/string_fitness_trainer_main_name_column"
+        android:textColor="@color/main_text_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/string_fitness_trainer_main_heartrate_column"
+        android:textColor="@color/main_text_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/string_fitness_trainer_main_calorie_column"
+        android:textColor="@color/main_text_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/string_fitness_trainer_main_skintemperature_column"
+        android:textColor="@color/main_text_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/string_fitness_trainer_main_state_column"
+        android:textColor="@color/main_text_color"
+        android:textSize="15sp" />
+
+</LinearLayout>

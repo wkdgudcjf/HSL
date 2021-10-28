@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fitness_main_below_menu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="117.25dp"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/fitness_main_range_status_layout"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="8.5dp"
+    android:background="@drawable/fitness_main_below_menu_board"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+
+    <!-- 목표 관리 메뉴 -->
+
+    <RelativeLayout
+        android:id="@+id/fitness_main_below_menu_aim_manager_imagebutton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="onClick" >
+
+        <ImageView
+            android:layout_width="73dp"
+            android:layout_height="18dp"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:src="@drawable/fitness_main_below_menu_aim_manager_btn" />
+    </RelativeLayout>
+
+    <!-- 운동 달력 메뉴 -->
+
+    <RelativeLayout
+        android:id="@+id/fitness_main_below_menu_calendar_imagebutton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="onClick" >
+
+        <ImageView
+            android:layout_width="73dp"
+            android:layout_height="18dp"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:src="@drawable/fitness_main_below_menu_calendar_btn" />
+    </RelativeLayout>
+
+    <!-- 내 정보 메뉴 -->
+
+    <RelativeLayout
+        android:id="@+id/fitness_main_below_menu_my_info_imagebutton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="onClick" >
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="18dp"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:src="@drawable/fitness_main_below_menu_my_info_btn" />
+    </RelativeLayout>
+
+</LinearLayout>

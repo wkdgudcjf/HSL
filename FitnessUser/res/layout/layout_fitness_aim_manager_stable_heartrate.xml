@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.samsung.hsl.fitnessuser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_clolor" >
+
+    <ImageView
+        android:id="@+id/fitness_aim_manager_donutprogress_imageview"
+        android:layout_width="205.25dp"
+        android:layout_height="205.25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:src="@drawable/fitness_aim_manager_01_graph_static" />
+
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:id="@+id/fitness_aim_manager_donutprogress"
+        android:layout_width="205.25dp"
+        android:layout_height="205.25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:visibility="invisible"
+        app:donut_finished_color="@color/donut_progress_aim"
+        app:donut_finished_stroke_width="10dp"
+        app:donut_inner_bottom_text=""
+        app:donut_max="220"
+        app:donut_suffix_text=""
+        app:donut_text=""
+        app:donut_unfinished_color="@color/donut_progress_unfinished"
+        app:donut_unfinished_stroke_width="5dp" />
+
+    
+	<ImageView
+            android:id="@+id/fitness_aim_graph_heart_imageview"
+            android:layout_width="17.25dp"
+            android:layout_height="15.25dp"
+            android:layout_alignTop="@id/fitness_aim_manager_donutprogress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="55.5dp"
+            android:src="@drawable/fitness_main_graph_heart" />
+
+	<ImageView
+            android:id="@+id/fitness_aim_graph_bmp_textview"
+            android:layout_width="28.75dp"
+            android:layout_height="14.00dp"
+            android:layout_alignTop="@id/fitness_aim_manager_donutprogress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="135.5dp"
+            android:src="@drawable/fitness_main_graph_bpm" />
+	
+    <TextView
+        android:id="@+id/fitness_aim_manager_donutprogress_value_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="90.75dp"
+        android:layout_alignTop="@id/fitness_aim_manager_donutprogress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55.5dp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:textColor="@color/donut_progress_aim"
+        android:text="@string/string_fitness_main_range_no_value"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/fitness_aim_manager_message_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fitness_aim_manager_donutprogress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46.5dp"
+        android:gravity="center"
+        android:text="@string/string_fitness_aim_manager_ready_stable_heartrate"
+        android:textColor="@color/stable_text_color"
+        android:textSize="18sp" />
+	<Button
+        android:id="@+id/fitness_aim_manager_stable_heartrate_button"
+        android:layout_width="295dp"
+        android:layout_height="46dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/fitness_aim_manager_message_textview"
+        android:textSize="18sp"
+        android:background="@color/aim_manager_button"
+		android:text="@string/string_fitness_aim_manager_stable_start_button" />
+
+</RelativeLayout>
